@@ -7,9 +7,9 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-os.environ["huggingfacehub_api_token"]="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"
+os.environ["huggingfacehub_api_token"]=os.getenv("LANGCHAIN_API_kEY")
 os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_API_KEY"]="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"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_kEY")
 
 # prompt template
 prompt_template= ChatPromptTemplate([("system","You a Q&A chatbot. Please respond to queries"),
