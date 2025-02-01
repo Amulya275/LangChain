@@ -7,7 +7,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-os.environ["huggingfacehub_api_token"]=os.getenv("LANGCHAIN_API_kEY")
+os.environ["huggingfacehub_api_token"]=os.getenv("HUGGINGFACE_API_TOKEN")
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_kEY")
 
